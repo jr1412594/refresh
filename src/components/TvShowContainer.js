@@ -17,8 +17,10 @@ export default function TvShowContainer({ tvShows }) {
 
     return (
         <div className='tvshow-container'>
-            <button onClick={updateCount}>Press Me Too!</button>
-            {count}
+            <div className='button'>
+                <button className='button' onClick={updateCount}>Press Me Too!</button>
+                {count}
+            </div>
             {displayTvShows()}
         </div>
     )
